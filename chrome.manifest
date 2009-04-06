@@ -1,0 +1,6 @@
+content	autodecodeuri	jar:chrome/autodecodeuri.jar!/content/autodecodeuri/
+
+overlay	chrome://messenger/content/messengercompose/messengercompose.xul	chrome://autodecodeuri/content/globalOverlay.xul
+
+locale	autodecodeuri	en-US	jar:chrome/autodecodeuri.jar!/locale/en-US/autodecodeuri/
+locale	autodecodeuri	ja	jar:chrome/autodecodeuri.jar!/locale/ja/autodecodeuri/
