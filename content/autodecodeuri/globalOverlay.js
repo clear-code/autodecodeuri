@@ -42,9 +42,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		eval('window.ComposeStartup = '+
 			window.ComposeStartup.toSource().replace(
 				/(\}\)?)$/,
-				<><![CDATA[
-					window.setTimeout('window.ComposerURIInsertionObserver.init();', 0);
-				$1]]></>
+				"window.setTimeout('window.ComposerURIInsertionObserver.init();', 0);$1"
 			)
 		);
 	}
