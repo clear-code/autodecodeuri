@@ -51,9 +51,8 @@ window.addEventListener('DOMContentLoaded', function() {
 		eval('window.MsgComposeCloseWindow = '+
 			window.MsgComposeCloseWindow.toSource().replace(
 				'{',
-				<><![CDATA[$&
-					window.ComposerURIInsertionObserver.destroy();
-				]]></>
+				'$&\n' +
+				'  window.ComposerURIInsertionObserver.destroy();\n'
 			)
 		);
 	}
